@@ -41,10 +41,11 @@ function App() {
                         {/* <h2>{weatherData.name}</h2> */}
                         <p>Weather Details of City:{weatherData.name}</p>
                         <p>Current Temperature: {weatherData.main.temp} &#8451;</p>
+                        <p>Temperature Range: {weatherData.main.temp_max}to{weatherData.main.temp_min} &#8451;</p>
                         <p>Weather: {weatherData.weather[0].description}</p>
-                        <p>Humidity:{weatherData.value="44"}</p>
-                        <p>Sea Level:{weatherData.value="1002"}</p>
-                        <p>Ground Level:{weatherData.value="963"}</p>
+                        <p>Humidity:{weatherData.main.humidity}</p>
+                        <p>Sea Level:{weatherData.visibility}</p>
+                        <p>Ground Level:{weatherData.wind.deg}</p>
                     </div>
                 )}
                 <div className="list">
